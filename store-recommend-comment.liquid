@@ -1,0 +1,33 @@
+<h1>{{ section.settings.store-recommend-comment }}</h1>
+
+{% schema %}
+    {
+        "name": "store-recommend-comment",
+        "settings": [
+            {
+                "type": "text",
+                "id": "store-recommend-comment",
+                "label": "ショップ内のおすすめコメント",
+                "default": "商品のセンスの良さです"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "logo",
+                "type": "typeA",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "logo",
+                        "label": "Logo"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+          {
+            "name": "store-recommend-comment"
+          }
+        ]
+    }
+{% endschema %}
